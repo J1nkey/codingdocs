@@ -165,6 +165,55 @@ The button contains a Clicked property, which have a code behind for processing 
 Let's see the top bar, we have a drop-down debug menu, inside it, we can select the target framework that we want to debug (On item **Framework(netx.x-platform)**)
 
 
+### There're have two things, we must notice in VS are the XAML Live Preview and Live Visual Tree
+> XAML Live Preview allow we see the debug window when the window is navigated to another position where we cann't see it.
+> Live Visual Tree is showing the structure of application as a tree
+
+
+# Lesson 4: Build .NET MAUI UI with XAML
+> Creating user interface and taking advantage of all the different layouts and controls built into .NET MAUI
+
+We will build a Todo list, that enables us to keep track of all the things that we want to do.
+
+### Build .NET MAUI app with XAML
+*Create a Todo list
+*UI Updates Responsively: How to update our user interface when the users interact with it.
+
+**User interface example image is stored in Images folder**
+**Some keywords we must search for:** ScrollView, CollectionView (CollectionView.ItemsSource, CollectionView.ItemPlate(DataTemplate)), SwipeView(SwipeView.RightItems|LeftItems, SwipeItem), Grid, Image, Entry, Button
+
+
+##The Layout
+This is maked by a Grid layout system.
+In Grid layout, we have 2 attributes are RowDefinitions and ColumnDefinitions (search for this attributes for learning).
+
+With grid system, everything inside must have specify the attributes Grid.Column, Grid.Row, Grid.ColumnSpan,...
+The default value of Grid.Column and Grid.Row will be 0 (that means the element is at position row 0 and column 0.
+
+
+**In this lesson, we notice to the change of MainPage.xaml**
+
+
+# Lesson 5: .NET MAUI Data Binding with MVVM & XAML
+In this lesson, we're going to do is extend that user interface and make it responsive and reactive using MVVM (Model-View-ViewModel).
+
+## MVVM
+This architecture pattern is very popular when we're developing applications with XAML, because it enables a **data binding**
+
+Data binding is a way for user interface to 'respond' to our code behind and vice versa.
+It's a way of managing our control and flow of data.
+
+The view just knows how to display data, like there's a button, there's a label, there's an entry,... 
+
+The ViewModel, we can think that is code behind but comepletely decoupled.
+**And what is represeting or what to display?**
+It may have a list of objects or strings and may know what to when a button is clicked and it may know what to  display in a label.
+
+> The binding system inside .NET MAUI is what brings it all together.
+Enabling our UI to automatically update our code behind and vice versa.
+
+The binding system handles not only properties back and forth, but also events like those button clicks or swipe to deletes.
+
 
 
 
